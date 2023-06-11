@@ -1,6 +1,6 @@
-import "../Layout/Header.css";
+import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
