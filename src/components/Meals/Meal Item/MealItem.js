@@ -1,11 +1,8 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./MealItem.css";
+import MealItemForm from "./MealItemForm";
 
 function MealItem(props) {
-  const [itemcount, setItemCount] = useState(1);
-  const additem = () => {
-    setItemCount((x) => x + 1);
-  };
   return (
     <li className="meal">
       <div className="item-card">
@@ -14,13 +11,7 @@ function MealItem(props) {
         <div className="price">Rs {props.price}</div>
       </div>
       <div className="amount">
-        <div>
-          <span>Amount</span>
-          <span>{itemcount}</span>
-        </div>
-        <div>
-          <button onClick={additem}>Add</button>
-        </div>
+        <MealItemForm></MealItemForm>
       </div>
     </li>
   );
