@@ -27,7 +27,7 @@ const DUMMY_MEALS = [
   },
 ];
 
-const MealsList = () => {
+const MealsList = (props) => {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
