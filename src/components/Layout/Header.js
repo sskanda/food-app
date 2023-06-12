@@ -8,7 +8,7 @@ function Header(prop) {
       <header className="header">
         <h1 id="headtext">Foodie</h1>
         <div>
-          <button className="header-button">
+          <button className="header-button" onClick={prop.onEnableCart}>
             <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
             <span>Your Cart </span>
             <span className="badge">3</span>
